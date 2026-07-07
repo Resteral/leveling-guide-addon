@@ -1,0 +1,13 @@
+## Interface: 30300
+## Title: |cff00ccffCoA|r |cffFFD700DPS & Mob Tracker|r
+## Notes: |cffaaaaaaReal-time DPS damage meter combined with an active combat target threat and health tracker.|r
+## Author: CoA Community
+## Version: 1.0.0
+## SavedVariables: CoADpsAndMobTrackerDB
+## DefaultState: enabled
+
+# Core logic
+Core\Engine.lua
+
+# UI
+UI\UI.lua
