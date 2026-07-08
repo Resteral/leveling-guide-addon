@@ -3,43 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download the ultimate Conquest of Azeroth Ability Trainer and Leveling Guide Addons.">
-    <title>CoA Addons | Leveling Guide & Ability Trainer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Download the ultimate Conquest of Azeroth Addon suite — Ability Trainer, DPS Tracker, Leveling Guide, and more.">
+    <title>CoA Addons | Conquest of Azeroth Addon Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-elements">
-        <div class="blob purple-blob"></div>
-        <div class="blob blue-blob"></div>
+
+    <div class="bg-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
     </div>
 
-    <main class="container">
-        <header>
-            <h1 class="glow-text">CoA Addons</h1>
-            <p class="subtitle">Elevate your Conquest of Azeroth experience with our premium suite of tools.</p>
-        </header>
+    <div class="particles" id="particles"></div>
 
-        <section class="card glass">
-            <div class="card-content">
-                <h2>Ultimate Leveling & Trainer Bundle</h2>
-                <ul class="features">
-                    <li><span class="icon">✨</span> Smart Ability Priority Trainer</li>
-                    <li><span class="icon">📈</span> Optimized Leveling Routes</li>
-                    <li><span class="icon">⚔️</span> Interactive Class Tutorials</li>
-                    <li><span class="icon">🛡️</span> Best-in-Slot Gear Guide</li>
-                </ul>
-                <a href="CoA_Addons.zip" download class="btn-primary">
-                    <span class="btn-text">Download Addon (.zip)</span>
-                    <span class="btn-glow"></span>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">⚔</span>
+                <span class="logo-text">CoA <span class="logo-accent">Addons</span></span>
+            </div>
+            <nav class="header-nav">
+                <a href="#features">Features</a>
+                <a href="#addons">Addons</a>
+                <a href="#install">Install</a>
+                <a href="https://github.com/Resteral/leveling-guide-addon" target="_blank" class="nav-github">GitHub ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-badge">🛡 Conquest of Azeroth • Free & Open Source</div>
+            <h1 class="hero-title">
+                The Ultimate<br>
+                <span class="gradient-text">CoA Addon Suite</span>
+            </h1>
+            <p class="hero-sub">Rotation trainer, live nameplate intel, DPS meter, and a full leveling guide — all in one download.</p>
+            <div class="hero-actions">
+                <a href="CoA_Addons.zip" download class="btn-download">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download CoA_Addons.zip
                 </a>
-                <p class="version">Version 1.0.0 • Supports Project Ascension</p>
+                <a href="https://github.com/Resteral/leveling-guide-addon" target="_blank" class="btn-ghost">View Source ↗</a>
+            </div>
+            <p class="hero-version">Latest build • 3 addons included • WotLK compatible</p>
+        </section>
+
+        <!-- FEATURE HIGHLIGHTS -->
+        <section class="section" id="features">
+            <h2 class="section-title">Everything You Need</h2>
+            <p class="section-sub">Built for CoA players who want an edge — whether you're leveling, dungeoning, or in PvP.</p>
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">⚡</div>
+                    <h3>Live Cast Counter</h3>
+                    <p>See exactly what the enemy is casting on their nameplate. Get instant colour-coded alerts — <em>INTERRUPT</em>, <em>DODGE</em>, <em>DISPEL</em>, or <em>POP DEFENSIVE</em> — with class-specific PvP counter tips.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8)">🎯</div>
+                    <h3>Smart Rotation Helper</h3>
+                    <p>Priority-based rotation for all 21 CoA classes and specs. Shows your next 3 abilities with urgency highlighting, range checks, and action bar glows.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#059669,#34d399)">📈</div>
+                    <h3>DPS & Mob Tracker</h3>
+                    <p>Real-time DPS/HPS meter with spell breakdowns, boss encounter segments, threat colours, and one-click group report to party chat.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24)">❕</div>
+                    <h3>Quest Mob Tags</h3>
+                    <p>Gold quest indicators on nameplates for every kill objective. Never waste time killing the wrong mob again.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#db2777,#f472b6)">💎</div>
+                    <h3>Loot on Nameplates</h3>
+                    <p>See top drop chances right on the nameplate. Plan your farming route before engaging.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#1d4ed8,#60a5fa)">🗺</div>
+                    <h3>1–60 Leveling Guide</h3>
+                    <p>Step-by-step quest routes for both Alliance and Horde with map coordinates, dungeon timings, and gear upgrade checkpoints.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#7c3aed,#c084fc)">🛡</div>
+                    <h3>Enemy Tactic HUD</h3>
+                    <p>Boss and elite ability warnings with HP phase triggers. Class-specific counter strategies update in real-time as the fight progresses.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon" style="background:linear-gradient(135deg,#065f46,#6ee7b7)">⚔</div>
+                    <h3>PvP Counter Tips</h3>
+                    <p>60+ spells in the counter database. When an enemy in a PvP fight starts casting, you get an immediate tip tailored to your class — fear, stuns, burst windows, and escape tools.</p>
+                </div>
+
             </div>
         </section>
+
+        <!-- ADDON BREAKDOWN -->
+        <section class="section" id="addons">
+            <h2 class="section-title">What's Inside the Zip</h2>
+            <p class="section-sub">Three standalone addons that work together seamlessly.</p>
+            <div class="addons-list">
+
+                <div class="addon-row glass-card">
+                    <div class="addon-tag" style="background:#7c3aed22;border-color:#7c3aed55;color:#a78bfa">CoAAbilityTrainer</div>
+                    <div class="addon-info">
+                        <h3>Ability Trainer & Combat HUD</h3>
+                        <p>Rotation helper · Proc alerts · Cooldown tracker · Resource bar · Enemy intel · Nameplate HUD · Player card · Cursor HUD · Casting bar</p>
+                    </div>
+                    <div class="addon-files">17 files</div>
+                </div>
+
+                <div class="addon-row glass-card">
+                    <div class="addon-tag" style="background:#0ea5e922;border-color:#0ea5e955;color:#38bdf8">CoADpsAndMobTracker</div>
+                    <div class="addon-info">
+                        <h3>DPS Meter & Mob Tracker</h3>
+                        <p>Live DPS/HPS · Spell breakdowns · Mob HP & threat · Boss encounter history · Group share report</p>
+                    </div>
+                    <div class="addon-files">2 files</div>
+                </div>
+
+                <div class="addon-row glass-card">
+                    <div class="addon-tag" style="background:#d9770622;border-color:#d9770655;color:#fbbf24">CoALevelGuide</div>
+                    <div class="addon-info">
+                        <h3>Leveling Guide & Class Reference</h3>
+                        <p>1-60 quest routes · Talent paths · BiS gear guide · Dungeon loot · PvP guide · Class tutorials</p>
+                    </div>
+                    <div class="addon-files">13 files</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INSTALL -->
+        <section class="section" id="install">
+            <h2 class="section-title">Installation</h2>
+            <div class="install-steps">
+                <div class="install-step">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h4>Download</h4>
+                        <p>Click the download button above to get <code>CoA_Addons.zip</code></p>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h4>Extract</h4>
+                        <p>Unzip the file and copy the 3 addon folders into your WoW directory:</p>
+                        <code class="path">World of Warcraft / Interface / AddOns /</code>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h4>Enable</h4>
+                        <p>Launch WoW → click <strong>AddOns</strong> on the character select screen → tick all three CoA addons → log in.</p>
+                    </div>
+                </div>
+                <div class="install-step">
+                    <div class="step-num">4</div>
+                    <div>
+                        <h4>Configure</h4>
+                        <p>Type <code>/coat</code> in game to open the settings panel and pick your class/spec.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD CTA -->
+        <section class="cta-section">
+            <div class="cta-card glass-card">
+                <h2>Ready to play smarter?</h2>
+                <p>Free forever. No login. No ads. Just drop it in your AddOns folder.</p>
+                <a href="CoA_Addons.zip" download class="btn-download btn-large">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download CoA_Addons.zip
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>Built for Conquest of Azeroth. Not affiliated with Project Ascension or Blizzard Entertainment.</p>
+    <footer class="site-footer">
+        <p>Built for <strong>Conquest of Azeroth</strong>. Community project — not affiliated with Project Ascension or Blizzard Entertainment.</p>
+        <p><a href="https://github.com/Resteral/leveling-guide-addon" target="_blank">GitHub ↗</a></p>
     </footer>
+
+    <script>
+        // Floating particles
+        const container = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            p.style.cssText = `
+                left:${Math.random()*100}%;
+                top:${Math.random()*100}%;
+                width:${2+Math.random()*3}px;
+                height:${2+Math.random()*3}px;
+                animation-delay:${Math.random()*8}s;
+                animation-duration:${6+Math.random()*6}s;
+                opacity:${0.1+Math.random()*0.4};
+            `;
+            container.appendChild(p);
+        }
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.feature-card, .addon-row, .install-step').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+    </script>
+
 </body>
 </html>
